@@ -3,7 +3,7 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,41 @@
 
 <body>
     <section class="top">
-        <header class="header" id="super-header">
-            <a href="index.html"> <img src="image/Logo_Logitech_dark 1.svg" alt=""></a>
+        <header class="header center" id="super-header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a href="index.html"> <img class="header__logo header__logo_dark"
+                            src="image/Logo_Logitech_dark 1.svg" alt=""></a>
+                    <a href="index.html"> <img class="header__logo header__logo_white" src="image/Logo_Logitech 1.svg"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menu-desctop" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">РАБОТАЙТЕ БЕЗ ПРОВОДОВ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ГДЕ УГОДНО</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">С КОМФОРТОМ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">С РАЗНЫХ УСТРОЙСТВ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">В ЛЮБОЕ ВРЕМЯ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">И ЕЩЕ БЫСТРЕЕ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <div class="top__img">
             <h2 class="heading">РАБОТАЙТЕ ПРОДУКТИВНЕЕ</h2>
@@ -25,14 +58,17 @@
             Создана для эффективной работы, программирования и творчества
         </p>
         <div class="top__arrow center-content">
-            <svg width="42" height="22" viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L20.6552 21L40.3103 1" stroke="#FF2947" stroke-width="2" stroke-linejoin="round" />
-            </svg>
+            <a href="#bluetooth">
+                <svg class="top__svg" width="61" height="33" viewBox="0 0 61 33" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L30.5 31L59 2" stroke="#FF2947" stroke-width="3" stroke-linejoin="round" />
+                </svg>
+            </a>
 
         </div>
     </section>
 
-    <section class="bluetooth">
+    <section class="bluetooth" id="bluetooth">
         <div class="bluetooth__icon center-content">
             <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -41,12 +77,16 @@
             </svg>
         </div>
         <h2 class="heading">БЕЗ ПРОВОДОВ</h2>
-        <p class="text text_margin">
+        <p class="text text_margin center">
             Беспроводная мышь MX Master 3 работает без проводов до нескольких месяцев.
             Вы закроете приоритетные задачи прежде, чем понадобится подзарядка.
         </p>
-        <div class="bluetooth__img">
-            <h3 class="bluethooth__heading">70 дней</h3>
+
+        <div class="center_bluetooth">
+            <div class="bluetooth__img">
+                <h3 class="bluethooth__heading"><span class="bluetooth__heading_day">70</span> <span
+                        class="bluetooth_heading_day-mini">дней</span></h3>
+            </div>
         </div>
 
     </section>
@@ -70,54 +110,56 @@
                 </p>
             </div>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <div class="info__slider">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/slider/wood.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/slider/glass.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/slider/linoleum.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="image/slider/wood.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="image/slider/glass.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="image/slider/linoleum.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
         <h3 class="info__heading">Переключите поверхность</h3>
-        <p class="text text_margin">
+        <p class="text text_margin text_info">
             Благодаря технологии Logitecch Darkfierd,
             MX Master 3 работает на любой поверхности, даже на стекле.
         </p>
     </section>
 
-    <section class="flow">
+    <section class="flow flow_center">
         <h2 class="heading">ОДНОВРЕМЕННО С НЕСКОЛЬКИХ УСТРОЙСТВ</h2>
-        <p class="text text_margin">
+        <p class="text text_margin text_flow-p">
             С технологией Flow вы сможете работать одновременно на нескольких компьютерах, мгновенно
             переключаясь между разными операционными системами — даже между Windows® и macOS.
             Например, достаточно скопировать текст, изображение или файл на MacBook и переместить его
             на Windows PC без задержек.
         </p>
         <br>
-        <p class="text text_margin">
+        <p class="text text_margin text_flow-p">
             Клавиатура MX Keys отслеживает перемещение курсора мыши MX Master 3, благодаря чему ваш
             текст появится там, где вы работаете в текущий момент.
         </p>
@@ -130,19 +172,22 @@
         </ol>
     </section>
 
-    <section class="settings">
-        <h2 class="heading">С ИНДИВИДУАЛЬНЫМИ НАСТРОЙКАМИ</h2>
-        <p class="text text_margin">Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря
+    <section class="settings center">
+        <h2 class="heading heading_settings">С ИНДИВИДУАЛЬНЫМИ НАСТРОЙКАМИ</h2>
+        <p class="text text_margin text_settings-p">Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря
             индивидуальным настройкам, вы сможете настроить кнопки и жесты практически
             под любое используемое приложение.
         </p>
-        <div id="carouselExampleIndicators" class="carousel slide settings_slider" data-bs-ride="carousel">
+        <div class="settings__img">
+            <img src="image/744aa55 1.png" alt="">
+        </div>
+        <div id="settings-slider" class="carousel slide settings__slider" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#settings-slider" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#settings-slider" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#settings-slider" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
@@ -173,30 +218,30 @@
         </div>
     </section>
 
-    <section class="mouse">
-        <div class="mouse__text">
+    <section class="mouse mouse_center">
+        <div class="mouse__text mouse_item mouse__text1">
             <h2 class="heading">КОМФОРТНО.
                 ЭРГОНОМИЧНО. ИНТУИТИВНО.
             </h2>
-            <p class="text text_margin">
+            <p class="text text_margin text_mouse ">
                 Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей ладони.
                 Но не менее важны колесико прокрутки для большого пальца
                 и расположение кнопок жестов, с которыми вы будете творить уверенно как никогда.
             </p>
         </div>
 
-        <div class="mouse__img mouse__img_1"></div>
-        <div class="mouse__text">
+        <div class="mouse__img mouse__img_1 mouse_item"></div>
+        <div class="mouse__text mouse_item mouse__text2">
             <h2 class="heading">
                 БЫСТРЕЕ, ЧЕМ КОГДА-ЛИБО
             </h2>
-            <p class="text text_margin">
+            <p class="text text_margin text_mouse">
                 Компьютерная мышь MX Master 3 предлагает ультимативный механизм прокрутки
                 со скоростью 1000 строк за 1 секунду.
                 С точностью до пикселя. Бесшумно.
             </p>
         </div>
-        <div class="mouse__img mouse__img_2"></div>
+        <div class="mouse__img mouse__img_2 mouse_item"></div>
 
     </section>
 
